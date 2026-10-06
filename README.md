@@ -99,8 +99,3 @@ python -c "import duckdb; print(duckdb.connect('weather.duckdb').sql('SELECT * F
 └── .github/workflows/ci.yml
 ```
 
-## Roadmap
-
-- [ ] Orchestrate with Apache Airflow
-- [ ] Rebuild transformations in dbt with schema tests
-- [ ] Add more Greek cities and a regional comparison
