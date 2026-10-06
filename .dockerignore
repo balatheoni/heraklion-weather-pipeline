@@ -1,0 +1,7 @@
+.git
+.github
+pycache
+.pytest_cache
+.venv
+*.duckdb
+*.duckdb.wal
