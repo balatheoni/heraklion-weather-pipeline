@@ -47,7 +47,7 @@ Predicting **next-day maximum temperature**, evaluated on a chronological hold-o
 | **CI/CD** | GitHub Actions: ruff lint → full pipeline → artifacts upload → Docker build, plus a **weekly scheduled run** |
 | **Packaging** | Dockerfile, Makefile |
 
-## 🔍 SQL highlight: heatwave detection (gaps-and-islands)
+## SQL highlight: heatwave detection (gaps-and-islands)
 
 ```sql
 WITH hot AS (
