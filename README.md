@@ -42,5 +42,3 @@ python train.py          # train & evaluate models
 python -c "import duckdb; print(duckdb.connect('weather.duckdb').sql('SELECT * FROM heatwaves').df())"
 ```
 
-## Next steps
-Airflow scheduling, Dockerfile, GitHub Actions running the tests, more cities.
