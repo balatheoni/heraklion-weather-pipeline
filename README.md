@@ -35,7 +35,7 @@ Predicting **next-day maximum temperature**, evaluated on a chronological hold-o
 
 **Takeaway:** both models beat the naive persistence baseline (~4% lower MAE, ~6% lower RMSE). The margin is small, and that is expected: next-day temperature is dominated by persistence, so further gains would need external forecast inputs (e.g. NWP model data) rather than more history-only features.
 
-## 🧱 What's inside
+## What's inside
 
 | Layer | Implementation |
 |---|---|
@@ -65,7 +65,7 @@ HAVING COUNT(*) >= 3;
 
 Consecutive hot days share the same `date - row_number` value, so grouping on it finds each streak in a single pass.
 
-## 🚀 Quickstart
+## Quickstart
 
 **Local**
 ```bash
@@ -86,7 +86,7 @@ Explore the views yourself:
 python -c "import duckdb; print(duckdb.connect('weather.duckdb').sql('SELECT * FROM heatwaves').df())"
 ```
 
-## 🗂️ Structure
+## Structure
 
 ```
 ├── ingestion.py          # extract + idempotent load + run SQL
@@ -99,7 +99,7 @@ python -c "import duckdb; print(duckdb.connect('weather.duckdb').sql('SELECT * F
 └── .github/workflows/ci.yml
 ```
 
-## 🛣️ Roadmap
+## Roadmap
 
 - [ ] Orchestrate with Apache Airflow
 - [ ] Rebuild transformations in dbt with schema tests
