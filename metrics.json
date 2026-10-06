@@ -1,0 +1,14 @@
+{
+  "Baseline (tomorrow = today)": {
+    "MAE": 1.563,
+    "RMSE": 2.107
+  },
+  "LinearRegression": {
+    "MAE": 1.502,
+    "RMSE": 1.997
+  },
+  "RandomForest": {
+    "MAE": 1.502,
+    "RMSE": 1.98
+  }
+}
